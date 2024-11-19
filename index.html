@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة طلبات الصيانة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>نظام إدارة طلبات الصيانة</h1>
+        <form id="maintenanceForm">
+            <div class="form-group">
+                <label for="buildingNumber">رقم المبنى</label>
+                <input type="text" id="buildingNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="roomNumber">رقم الغرفة</label>
+                <input type="text" id="roomNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="requestDetails">تفاصيل الطلب</label>
+                <input type="text" id="requestDetails" required>
+            </div>
+            <button type="submit">حفظ</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>رقم الطلب</th>
+                    <th>رقم المبنى</th>
+                    <th>رقم الغرفة</th>
+                    <th>تفاصيل الطلب</th>
+                    <th>حالة الطلب</th>
+                    <th>تحديث الحالة</th>
+                </tr>
+            </thead>
+            <tbody id="requestsTable">
+                <!-- طلبات الصيانة ستظهر هنا -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
